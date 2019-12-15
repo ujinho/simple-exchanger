@@ -1,0 +1,34 @@
+{
+  "extends": ["tslint:latest", "tslint-config-standard", "tslint-react", "tslint-config-prettier"],
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "linterOptions": {
+    "exclude": ["node_modules", "dist"]
+  },
+  "rules": {
+    "prettier": true,
+    "callable-types": false,
+    "import-name": false,
+    "interface-name": false,
+    "interface-over-type-literal": false,
+    "jsx-boolean-value": ["never"],
+    "member-ordering": false,
+    "no-floating-promises": false,
+    "no-implicit-dependencies": [true, "dev", ["api", "components", "const", "reducers", "types"]],
+    "no-submodule-imports": [
+      true,
+      "storeon",
+      "module-alias",
+      "jest-dom",
+      "redux",
+      "api",
+      "components",
+      "const",
+      "reducers",
+      "types",
+      "@testing-library/jest-dom"
+    ],
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "object-shorthand-properties-first": false
+  }
+}

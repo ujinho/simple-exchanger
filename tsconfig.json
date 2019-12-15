@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {
+      "api/*": ["api/*"],
+      "components/*": ["components/*"],
+      "const/*": ["const/*"],
+      "reducers/*": ["reducers/*"],
+      "types/*": ["types/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["./node_modules/**/*", "dist"]
+}
