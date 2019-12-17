@@ -1,5 +1,7 @@
 import React, { useCallback, useMemo, useEffect } from 'react';
-import useStoreon from 'storeon/react';
+
+import { useStoreon } from 'reducers/storeon';
+
 import Dinero, { Currency } from 'dinero.js';
 import { cn } from '@bem-react/classname';
 import { SYMBOLS } from 'const';
@@ -10,6 +12,7 @@ import { AppState } from '../../store';
 
 import './Exchanger.styl';
 import { PocketsEventName } from 'reducers/pockets';
+import { RatesEventName } from 'reducers/rates';
 
 const exchangerClassName = cn('exchanger');
 
@@ -22,7 +25,7 @@ export default () => {
 
   useEffect(() => {
     const symbols = SYMBOLS.filter(sym => sym !== from);
-    dispatch('rates/poll', { base: from, symbols });
+    dispatch(RatesEventName.Poll, { base: from, symbols });
   }, [from]);
 
   useEffect(() => {
@@ -91,6 +94,7 @@ export default () => {
         subtrahend={subtrahend}
         converted={converted}
         pockets={pocketsAsArray}
+        data-testid="pocket-list"
         onSelectPocket={onSelectPocket}
       />
 
@@ -103,7 +107,7 @@ export default () => {
           pattern="[0-9]+([,\.][0-9]+)?"
           placeholder="0.00"
           className={exchangerClassName('input')}
-          data-testid="exchanger-amount-input"
+          data-testid="amount-input"
           onChange={onSetAmount}
         />
         {from}
@@ -113,12 +117,17 @@ export default () => {
         <button
           className={exchangerClassName('button', { disabled: isConvertDisabled })}
           disabled={isConvertDisabled}
+          data-testid="convert-button"
           onClick={onConvert}
         >
           Convert
         </button>
 
-        <button className={exchangerClassName('button', { outlined: true })} onClick={onReset}>
+        <button
+          className={exchangerClassName('button', { outlined: true })}
+          data-testid="reset-button"
+          onClick={onReset}
+        >
           Reset
         </button>
       </div>

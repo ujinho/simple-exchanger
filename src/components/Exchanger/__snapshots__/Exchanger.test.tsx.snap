@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Exchanger /> spec should render without crasing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="exchanger"
+      >
+        <div
+          class="exchanger-hint"
+          data-testid="exchanger-hint"
+        />
+        <div
+          class="exchanger-pockets"
+        >
+          <div
+            class="pocket pocket_destination"
+            data-testid="pocket-USD"
+          >
+            USD 50.00
+            <div
+              class="pocket-info"
+            >
+              <div
+                class="pocket-converted pocket-converted_sign_plus"
+                data-testid="pocket-USD-converted-value"
+              >
+                +6
+              </div>
+              <div
+                class="pocket-rate"
+                data-testid="pocket-USD-rate"
+              >
+                1.2
+              </div>
+            </div>
+          </div>
+          <div
+            class="pocket"
+            data-testid="pocket-EUR"
+          >
+            EUR 50.00
+            <div
+              class="pocket-info"
+            >
+              <div
+                class="pocket-converted pocket-converted_sign_minus"
+                data-testid="pocket-EUR-converted-value"
+              />
+              <div
+                class="pocket-rate"
+                data-testid="pocket-EUR-rate"
+              >
+                1.1
+              </div>
+            </div>
+          </div>
+          <div
+            class="pocket pocket_source"
+            data-testid="pocket-GBP"
+          >
+            GBP 50.00
+            <div
+              class="pocket-info"
+            >
+              <div
+                class="pocket-converted pocket-converted_sign_minus"
+                data-testid="pocket-GBP-converted-value"
+              >
+                -5
+              </div>
+              <div
+                class="pocket-rate"
+                data-testid="pocket-GBP-rate"
+              >
+                1.00
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="exchanger-input-row"
+        >
+          <input
+            class="exchanger-input"
+            data-testid="amount-input"
+            max="50"
+            min="-50"
+            pattern="[0-9]+([,\\\\.][0-9]+)?"
+            placeholder="0.00"
+            step="0.05"
+            type="number"
+          />
+          GBP
+        </div>
+        <div
+          class="exchanger-buttons"
+        >
+          <button
+            class="exchanger-button"
+            data-testid="convert-button"
+          >
+            Convert
+          </button>
+          <button
+            class="exchanger-button exchanger-button_outlined"
+            data-testid="reset-button"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="exchanger"
+    >
+      <div
+        class="exchanger-hint"
+        data-testid="exchanger-hint"
+      />
+      <div
+        class="exchanger-pockets"
+      >
+        <div
+          class="pocket pocket_destination"
+          data-testid="pocket-USD"
+        >
+          USD 50.00
+          <div
+            class="pocket-info"
+          >
+            <div
+              class="pocket-converted pocket-converted_sign_plus"
+              data-testid="pocket-USD-converted-value"
+            >
+              +6
+            </div>
+            <div
+              class="pocket-rate"
+              data-testid="pocket-USD-rate"
+            >
+              1.2
+            </div>
+          </div>
+        </div>
+        <div
+          class="pocket"
+          data-testid="pocket-EUR"
+        >
+          EUR 50.00
+          <div
+            class="pocket-info"
+          >
+            <div
+              class="pocket-converted pocket-converted_sign_minus"
+              data-testid="pocket-EUR-converted-value"
+            />
+            <div
+              class="pocket-rate"
+              data-testid="pocket-EUR-rate"
+            >
+              1.1
+            </div>
+          </div>
+        </div>
+        <div
+          class="pocket pocket_source"
+          data-testid="pocket-GBP"
+        >
+          GBP 50.00
+          <div
+            class="pocket-info"
+          >
+            <div
+              class="pocket-converted pocket-converted_sign_minus"
+              data-testid="pocket-GBP-converted-value"
+            >
+              -5
+            </div>
+            <div
+              class="pocket-rate"
+              data-testid="pocket-GBP-rate"
+            >
+              1.00
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="exchanger-input-row"
+      >
+        <input
+          class="exchanger-input"
+          data-testid="amount-input"
+          max="50"
+          min="-50"
+          pattern="[0-9]+([,\\\\.][0-9]+)?"
+          placeholder="0.00"
+          step="0.05"
+          type="number"
+        />
+        GBP
+      </div>
+      <div
+        class="exchanger-buttons"
+      >
+        <button
+          class="exchanger-button"
+          data-testid="convert-button"
+        >
+          Convert
+        </button>
+        <button
+          class="exchanger-button exchanger-button_outlined"
+          data-testid="reset-button"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

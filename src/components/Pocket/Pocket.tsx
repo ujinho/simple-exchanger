@@ -47,7 +47,9 @@ const Pocket = ({
         >
           {convertedFormatted}
         </div>
-        <div className={pocketClassName('rate')}>{roundedRate || '1.00'}</div>
+        <div className={pocketClassName(`rate`)} data-testid={`pocket-${currency}-rate`}>
+          {roundedRate || '1.00'}
+        </div>
       </div>
     </div>
   );

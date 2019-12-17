@@ -14,6 +14,7 @@ module.exports = {
     "json",
     "node"
   ],
+  "modulePaths": ['<rootDir>/src', '<rootDir>/src/state'],
   "moduleNameMapper": {
     "\\.(css|styl)$": "identity-obj-proxy",
     "^api(.*)$": "<rootDir>/src/api$1",

@@ -1,5 +1,5 @@
 import Dinero from 'dinero.js';
-import { getPreConvertReducer, getConvertReducer } from '../../../src/reducers/pockets';
+import { getPreConvertReducer, getConvertReducer } from './pockets';
 
 const rates = {
   base: 'USD',

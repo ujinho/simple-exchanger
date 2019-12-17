@@ -4,5 +4,5 @@ export interface FxRates {
   base: Currency;
   date?: string;
   rates: { [key in Currency]?: number };
-  error: string;
+  error?: string;
 }
